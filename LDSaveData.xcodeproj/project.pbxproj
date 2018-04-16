@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D50367B2AE6F2198B1EBE67 /* libPods-LDSaveData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E123F40F11AEE0E703F9452 /* libPods-LDSaveData.a */; };
 		A812B9F3208446720076A52E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A812B9F2208446720076A52E /* AppDelegate.m */; };
 		A812B9F6208446720076A52E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A812B9F5208446720076A52E /* ViewController.m */; };
 		A812B9F9208446720076A52E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A812B9F7208446720076A52E /* Main.storyboard */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F997C83527B609F19903F16 /* Pods-LDSaveData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LDSaveData.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LDSaveData/Pods-LDSaveData.debug.xcconfig"; sourceTree = "<group>"; };
+		4E123F40F11AEE0E703F9452 /* libPods-LDSaveData.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LDSaveData.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A812B9EE208446720076A52E /* LDSaveData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LDSaveData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A812B9F1208446720076A52E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A812B9F2208446720076A52E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -53,6 +56,7 @@
 		A812BA14208446740076A52E /* LDSaveDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LDSaveDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A812BA18208446740076A52E /* LDSaveDataUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDSaveDataUITests.m; sourceTree = "<group>"; };
 		A812BA1A208446740076A52E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9C07CFDEE7FB4563413E992 /* Pods-LDSaveData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LDSaveData.release.xcconfig"; path = "Pods/Target Support Files/Pods-LDSaveData/Pods-LDSaveData.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D50367B2AE6F2198B1EBE67 /* libPods-LDSaveData.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +85,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18B7C2611717FD15777C7EBF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F997C83527B609F19903F16 /* Pods-LDSaveData.debug.xcconfig */,
+				C9C07CFDEE7FB4563413E992 /* Pods-LDSaveData.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4D929C1AAFFAC553BCD85200 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E123F40F11AEE0E703F9452 /* libPods-LDSaveData.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A812B9E5208446720076A52E = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +109,8 @@
 				A812BA0C208446740076A52E /* LDSaveDataTests */,
 				A812BA17208446740076A52E /* LDSaveDataUITests */,
 				A812B9EF208446720076A52E /* Products */,
+				18B7C2611717FD15777C7EBF /* Pods */,
+				4D929C1AAFFAC553BCD85200 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +166,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A812BA1D208446740076A52E /* Build configuration list for PBXNativeTarget "LDSaveData" */;
 			buildPhases = (
+				AA6153D2932B082B45047D19 /* [CP] Check Pods Manifest.lock */,
 				A812B9EA208446720076A52E /* Sources */,
 				A812B9EB208446720076A52E /* Frameworks */,
 				A812B9EC208446720076A52E /* Resources */,
@@ -259,6 +284,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AA6153D2932B082B45047D19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LDSaveData-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A812B9EA208446720076A52E /* Sources */ = {
@@ -435,14 +481,12 @@
 		};
 		A812BA1E208446740076A52E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F997C83527B609F19903F16 /* Pods-LDSaveData.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LDSaveData/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = weichuan.LDSaveData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -451,14 +495,12 @@
 		};
 		A812BA1F208446740076A52E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9C07CFDEE7FB4563413E992 /* Pods-LDSaveData.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LDSaveData/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = weichuan.LDSaveData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -471,11 +513,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LDSaveDataTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = weichuan.LDSaveDataTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -489,11 +527,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LDSaveDataTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = weichuan.LDSaveDataTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -506,11 +540,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LDSaveDataUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = weichuan.LDSaveDataUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -523,11 +553,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LDSaveDataUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = weichuan.LDSaveDataUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
